@@ -11,13 +11,10 @@ function SortedArray(cmp, arr) {
 
 SortedArray.prototype.insert = function(element) {
   var index = search(this.arr, element, this.cmp)
-  if (index >= 0) {
-    this.arr[index] = element
-    return false
-  }
+  if (index < 0)
+    index = ~index
 
-  this.arr.splice(~index, 0, element)
-  return true
+  this.arr.splice(index, 0, element)
 }
 
 SortedArray.prototype.indexOf = function(element) {

@@ -18,10 +18,9 @@
 
   The backing array.
 
-#### sortedArray.insert(element) → Boolean
+#### sortedArray.insert(element)
 
   Inserts an element into the array.
-  Returns `true` if it *added* the element, `false` if it *replaced* an existing element.
 
 #### sortedArray.indexOf(element) → Integer
 
