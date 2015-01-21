@@ -1,4 +1,5 @@
 'use strict';
+module.exports = SortedArray
 var search = require('binary-search')
 
 function SortedArray(cmp, arr) {
